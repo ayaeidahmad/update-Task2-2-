@@ -1,0 +1,291 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* nav */
+.nav
+{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 50;
+}
+.nav a
+{
+    text-decoration: none;
+color: #fff;
+position: relative;
+padding: 0 10px;
+}
+.nav a::after{
+    content: "";
+    position: absolute;
+    background-color: #ecdee2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+.nav a:hover::after{
+width: 100%;
+}
+.nav a::before{
+    content: "";
+    position: absolute;
+    background-color: #ecdee2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: -9px;
+    transition: 0.5s;
+}
+.nav a:hover::before{
+width: 100%;
+}
+.nav .list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+/* .nav .list li a:hover
+{
+    text-decoration: underline white;
+} */
+/* first page */
+.first-page
+{
+    background-image: url(./../images/coffeehouse.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+.first-page .title .the
+{
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    font-size: 80px;
+}
+.first-page .title .coffe
+{
+    color: white;
+    position: absolute;
+    left: 43%;
+    top: 40%;
+    font-size: 80px;
+}
+.first-page .para1
+{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 5px;
+}
+.first-page .para2
+{
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+/* about */
+.all
+{
+    background-color: #f7f5f2;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+}
+.all2 
+{
+    display: flex;
+    /* justify-content:space-evenly; */
+    /* align-items: center; */
+    flex-direction: column;
+    width: 45%;
+    padding: 50px;
+    
+}
+.all2 .h2
+{
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 3px;
+    margin: auto ;
+}
+.all2 .about .p
+{
+    padding: 15px 0;
+    word-spacing: 5px;
+}
+.all2 .about .scrol
+{
+    background-color: #f1f1f1;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+    word-spacing: 5px;
+    margin-bottom: 25px;
+}
+.all2 .about .scrol p
+{
+    padding: 10px 10px;
+}
+.all .all2 .img
+{
+    width: 100%;
+    box-shadow: 2px 2px 5px 2px #d8d5d5;
+}
+.all .all2 .about .p2 p span
+{
+    font-weight: bold;
+}
+.all .all2 .about .p2 p
+{
+    padding: 10px;
+    word-spacing: 2px;
+}
+/* menu */
+.menu .btn
+{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    height: 30px;
+    box-shadow: 2px 2px 5px 2px #bbbaba;
+    border: none;
+}
+.menu
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menu .btn
+{
+    margin-top: 25px;
+    background-color: #f7f5f2;
+}
+.menu .btn div button
+{
+    width:280px;
+    cursor: pointer;
+}
+.menu .btn button:hover
+{
+    background-color: #d8954b;
+    color: #fff;
+}
+.menu .btn button
+{
+    background-color: #616161;
+    color: white;
+    border: none;
+    padding: 3px 0;
+}
+/* .menu .btn .btn2 button
+{
+    border: none;
+    padding: 3px 0;
+    background-color: #f7f5f2;
+} */
+.menu .menu-eat
+{
+    border: none;
+    box-shadow: 2px 2px 5px 2px #bbbaba;
+    background-color: #f7f5f2;
+    margin-bottom: 25px;
+}
+.menu .menu-eat .list-eat
+{
+    padding: 15px 10px;
+}
+.menu .menu-eat .list-eat .sub-title
+{
+    padding: 10px 0;
+}
+.menu .menu-eat .list-eat .sub-paragraph
+{
+    color: #5e5c5c;
+    padding: 10px 0;
+}
+/* map */
+.map .p
+{
+    margin: 25px 0 15px ;
+}
+.map .p span
+{
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
+/* form */
+.form div input 
+{
+    width: 100%;
+    padding: 15px 0 15px 2px;
+    margin: 10px 0;
+}
+input:focus
+{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #d8954b;
+    background-color: #f7f5f2;
+}
+.form .send
+{
+    background-color: white;
+    color: #d8954b;
+    border: 2px solid #d8954b;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 1s, box-shadow 1s;
+
+}
+.send:hover
+{
+    transition-delay: .4s;
+    color: #d8954b;
+    box-shadow:  0 0 10px #d8954b,
+    0 0 20px #d8954b,
+    0 0 40px #d8954b;
+}
+
+.form span
+{
+    font-weight: bold;
+}
+/* footer */
+footer 
+{
+    width: 100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p,a
+{
+    color: #5e5c5c;
+}
+footer a:hover
+{
+    color: black;
+}
